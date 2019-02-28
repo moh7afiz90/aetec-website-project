@@ -1,2 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 10px; }
+
 body {
-  background: #444; }
+  margin: 0;
+  color: #000;
+  font-family: Arial, Helvetica, sans-serif; }
+
+#landing-page {
+  overflow: hidden !important; }
+
+#menu-top {
+  padding: 0.5rem 1rem;
+  background-color: rgba(204, 204, 204, 0.215);
+  box-shadow: rgba(94, 94, 94, 0.726);
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  #menu-top #logo {
+    text-align: center;
+    padding: 0; }
+    #menu-top #logo img {
+      height: 5rem;
+      width: 5rem; }
+    #menu-top #logo h3 {
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 1.5rem;
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7); }
+  #menu-top #phone-number {
+    text-align: center; }
+    #menu-top #phone-number h3 {
+      font-size: 1rem; }
+  #menu-top .arab {
+    height: auto;
+    width: auto;
+    padding: 10px;
+    margin: 0;
+    border: 0.1px solid #ffffff; }
+    #menu-top .arab a {
+      color: #ffffff;
+      text-align: center;
+      text-decoration: none;
+      font-size: 2.5rem; }
+
+#nav-container {
+  height: 4rem;
+  width: 100%; }
+  #nav-container .taggeable_bar {
+    display: none; }
+  #nav-container #logo {
+    display: none; }
+  #nav-container ul {
+    display: flex;
+    justify-content: center;
+    padding: 1rem; }
+  #nav-container li + li {
+    border-left: 1px solid #ffffff; }
+  #nav-container li {
+    list-style: none; }
+  #nav-container li::after {
+    background-color: red;
+    content: "";
+    width: 0;
+    height: 3px;
+    left: 0;
+    transition: width 0.35s ease 0s;
+    position: absolute; }
+  #nav-container li:hover::after {
+    width: relative; }
+  #nav-container li a {
+    color: #ffffff;
+    padding: 3rem;
+    text-decoration: none;
+    font-size: 1.5rem;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7); }
+
+#bg-img {
+  background-image: url(../assets/images/hero-bg.jpeg);
+  height: 100vh;
+  background-size: cover;
+  background-position: center; }
+  #bg-img #overlay {
+    background-color: rgba(22, 87, 206, 0.5);
+    background-size: cover;
+    height: 100vh; }
+  #bg-img #showcase {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px; }
+    #bg-img #showcase h1 {
+      text-align: center;
+      font-size: 4rem;
+      font-family: LucidaGrande;
+      color: #ffffff;
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); }
+    #bg-img #showcase h4 {
+      text-align: center;
+      margin: 20px;
+      font-family: RobotoMono-Light;
+      font-size: 3rem;
+      color: #ffffff;
+      text-shadow: 0 2px 4px rgba(249, 249, 249, 0.1); }
+    #bg-img #showcase .button {
+      text-decoration: none;
+      opacity: 0.91;
+      font-size: 3rem;
+      padding: 10px;
+      font-family: LucidaGrande;
+      color: #1657CE;
+      text-align: center;
+      text-shadow: 0 2px 4px rgba(148, 143, 196, 0.5);
+      background: #FFFFFF;
+      border: 1px solid #FFFFFF;
+      box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.5);
+      border-radius: 40.5px;
+      cursor: pointer; }
+
+@media screen and (max-width: 580px) {
+  header #menu-top {
+    display: none; }
+  #nav-container ul {
+    background-color: rgba(22, 87, 206, 0.7);
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px; }
+  #nav-container ul li {
+    text-align: center;
+    margin: 0.4rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.222); }
+  #nav-container ul li:last-child {
+    border: 0; }
+  #nav-container li:hover {
+    background-color: rgba(204, 204, 204, 0.201); }
+  #nav-container li + li {
+    border-left: none; }
+  #nav-container .taggeable_bar i {
+    display: block !important;
+    z-index: 1;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: #ffffff; }
+  #bg-img {
+    background-image: url(../assets/images/hero-bg.jpeg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center; }
+    #bg-img #showcase {
+      height: 100vh !important; }
+      #bg-img #showcase h1 {
+        font-size: 2.5rem !important; }
+      #bg-img #showcase h4 {
+        font-size: 1.5rem !important; }
+      #bg-img #showcase .button {
+        font-size: 1.5rem !important; } }
