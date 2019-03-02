@@ -159,3 +159,245 @@ body {
         font-size: 1.5rem !important; }
       #bg-img #showcase .button {
         font-size: 1.5rem !important; } }
+
+.title {
+  text-transform: uppercase;
+  text-align: center;
+  margin: 10px !important;
+  width: 8rem;
+  margin-top: 10px;
+  border: 1px solid #3E57D4;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.075);
+  border: 1px solid #1657CE;
+  font-family: AlTarikh;
+  font-size: 1rem;
+  color: #3E57D4;
+  text-shadow: 0 1px 1px rgba(62, 87, 212, 0.037); }
+
+#about-us {
+  height: 100vh;
+  overflow: hidden; }
+  #about-us .header {
+    font-family: LucidaGrande;
+    font-size: 45px;
+    color: #3E57D4;
+    text-align: center;
+    text-shadow: 0 2px 4px #BBBCD6; }
+
+#academic {
+  height: 100vh;
+  overflow: hidden; }
+  #academic .header {
+    font-family: LucidaGrande;
+    font-size: 45px;
+    color: #3E57D4;
+    text-align: center;
+    text-shadow: 0 2px 4px #BBBCD6; }
+
+#admission {
+  height: 100vh;
+  overflow: hidden; }
+  #admission .header {
+    font-family: LucidaGrande;
+    font-size: 45px;
+    color: #3E57D4;
+    text-align: center;
+    text-shadow: 0 2px 4px #BBBCD6; }
+  #admission .container {
+    width: 90vw;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    flex: 1; }
+    #admission .container .application-container-1 {
+      border: 1px solid #1657CE; }
+    #admission .container .application-container-1 h1 {
+      padding: 10px;
+      font-family: LucidaGrande;
+      font-size: 3rem;
+      color: #3E57D4;
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+      text-align: center; }
+    #admission .container .application-container-2 {
+      text-align: center;
+      margin-top: 10px;
+      border: 1px solid rgba(22, 87, 206, 0.1); }
+    #admission .container .application-container-1 p {
+      font-family: LucidaGrande;
+      padding: 10px;
+      font-size: 1rem;
+      color: #3E57D4;
+      text-align: center;
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); }
+    #admission .container .application-container-2 a {
+      text-align: center;
+      background: #3E57D4;
+      border: 1px solid #979797;
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+      border-radius: 3rem;
+      font-family: LucidaGrande;
+      font-size: 1.5rem;
+      padding: 0.5rem;
+      color: #FFFFFF;
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+      text-decoration: none;
+      text-transform: uppercase; }
+  #admission .box {
+    float: right;
+    width: 90px;
+    height: 20px;
+    border: 1px solid #444; }
+  #admission .box img {
+    width: 10rem;
+    height: 10rem; }
+  #admission .box.a {
+    position: relative; }
+  #admission .box.b {
+    margin-top: -7.5rem;
+    margin-left: 4rem; }
+  #admission .box.c {
+    margin-top: 7.5rem;
+    margin-left: 8rem; }
+
+#media {
+  height: 100vh;
+  overflow: hidden; }
+  #media .media-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+  #media .media-item {
+    margin: 1rem auto;
+    text-align: center;
+    border: 1px solid rgba(22, 87, 206, 0.5);
+    width: 70vw; }
+    #media .media-item h1 {
+      font-family: LucidaGrande;
+      font-size: 2rem;
+      color: #3E57D4;
+      padding: 1rem;
+      text-align: center; }
+    #media .media-item img {
+      margin: 1rem;
+      width: 250px;
+      height: 180px; }
+    #media .media-item p {
+      padding: 1rem;
+      font-family: LucidaGrande;
+      font-size: 1.3rem;
+      color: #3E57D4;
+      text-align: center; }
+
+@media screen and (min-width: 581px) {
+  #media .media-container {
+    display: flex;
+    flex-direction: row; }
+  #media .media-item {
+    margin: 10rem 1rem;
+    text-align: center;
+    border: 1px solid rgba(22, 87, 206, 0.5); }
+    #media .media-item h1 {
+      font-family: LucidaGrande;
+      font-size: 2rem;
+      color: #3E57D4; }
+    #media .media-item img {
+      width: 350px;
+      height: 200px; }
+    #media .media-item p {
+      font-family: LucidaGrande;
+      font-size: 1.3rem;
+      color: #3E57D4;
+      text-align: center;
+      font-family: LucidaGrande; } }
+
+#contact-us {
+  overflow: hidden;
+  height: 100vh; }
+  #contact-us .contact-us-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+  #contact-us .contact-us-item {
+    margin: 1rem auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid rgba(22, 87, 206, 0.5);
+    width: 70vw; }
+    #contact-us .contact-us-item .inner-container {
+      margin: 2rem auto;
+      text-align: center;
+      border: 1px solid rgba(22, 87, 206, 0.5); }
+    #contact-us .contact-us-item h1 {
+      text-transform: uppercase;
+      font-family: LucidaGrande;
+      font-size: 2rem;
+      color: #3E57D4;
+      padding: 1rem;
+      text-align: center; }
+    #contact-us .contact-us-item p {
+      padding: 1rem;
+      font-family: LucidaGrande;
+      font-size: 1.3rem;
+      color: #3E57D4;
+      text-align: center; }
+    #contact-us .contact-us-item #map {
+      width: 60vw;
+      margin: 1rem;
+      border: 1px solid rgba(22, 87, 206, 0.5); }
+      #contact-us .contact-us-item #map h6 {
+        font-family: LucidaGrande;
+        font-size: 1rem;
+        text-transform: uppercase;
+        color: #3E57D4;
+        text-align: center;
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.009); }
+  #contact-us .contact-info {
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid #1657CE, 0.5;
+    font-family: AlTarikh;
+    font-size: 30px;
+    color: #1657CE; }
+    #contact-us .contact-info a {
+      text-decoration: none;
+      font-size: 1.2rem;
+      color: #1657CE; }
+    #contact-us .contact-info i {
+      padding: auto 1rem;
+      font-size: 1.5rem;
+      color: #1657CE; }
+  #contact-us .social-icons {
+    margin: 1rem; }
+    #contact-us .social-icons a {
+      text-decoration: none;
+      color: #1657CE;
+      margin: 1rem; }
+  #contact-us .contact-us-item form {
+    text-align: center; }
+  #contact-us .contact-us-item fieldset {
+    border: medium none !important;
+    margin: 0 0 10px;
+    min-width: 100%;
+    padding: 0;
+    width: 100%; }
+  #contact-us .contact-us-item #contact-form input[type="text"],
+  #contact-us .contact-us-item #contact-form input[type="email"],
+  #contact-us .contact-us-item #contact-form input[type="tel"] {
+    width: 80%;
+    border: 1px solid #ccc;
+    background: #fff;
+    margin: 0 auto;
+    padding: 10px;
+    color: #1657CE; }
+  #contact-us .contact-us-item #contact-form button[type="submit"] {
+    cursor: pointer;
+    width: 70%;
+    border: none;
+    background: #1657CE;
+    color: #fff;
+    margin: 0 0 5px;
+    padding: 1rem;
+    font-size: 1.5rem; }
+  #contact-us .contact-us-item #contact-form button[type="submit"]:hover {
+    background: #09c; }

@@ -70,6 +70,7 @@ body {
   }
 }
 #nav-container {
+  // position: fixed;
   height: 4rem;
   width: 100%;
   .taggeable_bar {
@@ -225,4 +226,329 @@ body {
     }
   }
   
+}
+
+
+// =======================
+//       TITLE STYLE
+// =======================
+.title {
+  text-transform: uppercase;
+  text-align: center;
+  margin: 10px !important;
+  width: 8rem;
+  margin-top: 10px;
+  border: 1px solid #3E57D4;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.075);
+  border: 1px solid $primary-color;
+  font-family: AlTarikh;
+  font-size: 1rem;
+  color: #3E57D4;
+  text-shadow: 0 1px 1px rgba(62, 87, 212, 0.037);
+}
+// =======================
+//        ABOUT US
+// =======================
+#about-us{
+  height: 100vh;
+  overflow: hidden;
+  .header {
+    font-family: LucidaGrande;
+    font-size: 45px;
+    color: #3E57D4;
+    text-align: center;
+    text-shadow: 0 2px 4px #BBBCD6;
+  }
+}
+// =======================
+//        ACADEMIC
+// =======================
+#academic{
+  height: 100vh;
+  overflow: hidden;
+  .header {
+    font-family: LucidaGrande;
+    font-size: 45px;
+    color: #3E57D4;
+    text-align: center;
+    text-shadow: 0 2px 4px #BBBCD6;
+  }
+}
+// =======================
+//        ADMISSION
+// =======================
+#admission{
+  height: 100vh;
+  overflow: hidden;
+  .header {
+    font-family: LucidaGrande;
+    font-size: 45px;
+    color: #3E57D4;
+    text-align: center;
+    text-shadow: 0 2px 4px #BBBCD6;
+  }
+  .container {
+    width: 90vw;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    .application-container-1 {
+      border: 1px solid $primary-color;
+    }
+    .application-container-1 h1 {
+      padding: 10px;
+      font-family: LucidaGrande;
+      font-size: 3rem;
+      color: #3E57D4;
+      text-shadow: 0 2px 4px rgba(0,0,0,0.50);
+      text-align: center;
+    }
+    .application-container-2 {
+      text-align: center;
+      margin-top: 10px;
+      border: 1px solid rgba($primary-color, 0.1);
+    }
+    .application-container-1 p {
+      font-family: LucidaGrande;
+      padding: 10px;
+      font-size: 1rem;
+      color: #3E57D4;
+      text-align: center;
+      text-shadow: 0 2px 4px rgba(0,0,0,0.050);
+    }
+    
+    .application-container-2 a {
+      text-align: center;
+      background: #3E57D4;
+      border: 1px solid #979797;
+      box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
+      border-radius: 3rem;
+      font-family: LucidaGrande;
+      font-size: 1.5rem;
+      padding: 0.5rem;
+      color: #FFFFFF;
+      text-shadow: 0 2px 4px rgba(0,0,0,0.50);
+      text-decoration: none;
+      text-transform: uppercase;
+      
+    }
+  }
+  .box {
+    float: right;
+    width: 90px;
+    height: 20px;
+    // padding: 80px 0 0px 10px;
+    // background-image: url('./assets/images/admission-img/1.jpeg');
+    border: 1px solid #444;
+  }
+  .box img {
+    width: 10rem;
+    height: 10rem;
+  }
+  .box.a {
+    position: relative;
+  }
+  .box.b{
+    margin-top: -7.5rem;
+    margin-left: 4rem;
+  }
+  .box.c{
+    margin-top: 7.5rem;
+    margin-left: 8rem;
+  }
+}
+
+// =======================
+//        MEDIA MOBILE
+// =======================
+#media {
+  height: 100vh;
+  overflow: hidden;
+  .media-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .media-item {
+    margin: 1rem auto;
+    text-align: center;
+    border: 1px solid rgba($primary-color, 0.5);
+    width: 70vw;
+    h1 {
+      font-family: LucidaGrande;
+      font-size: 2rem;
+      color: #3E57D4;
+      padding: 1rem;
+      text-align: center;
+    }
+    img {
+      margin: 1rem;
+      width: 250px;
+      height: 180px;
+    }
+    p {
+      padding: 1rem;
+      font-family: LucidaGrande;
+      font-size: 1.3rem;
+      color: #3E57D4;
+      text-align: center;
+    }
+  }
+}
+
+// =======================
+//        MEDIA DESKTOP
+// =======================
+
+@media screen and (min-width: 581px) {
+  #media {
+    .media-container{
+      display: flex;
+      flex-direction: row;
+    }
+    .media-item {
+      margin: 10rem 1rem;
+      text-align: center;
+      border: 1px solid rgba($primary-color, 0.5);
+      // width: 70vw;
+      h1 {
+        font-family: LucidaGrande;
+        font-size: 2rem;
+        color: #3E57D4;
+        // padding: 1rem;
+        // text-align: center;
+      }
+      img {
+        // margin: 1rem;
+        width: 350px;
+        height: 200px;
+      }
+      p {
+        // padding: 1rem;
+        font-family: LucidaGrande;
+        font-size: 1.3rem;
+        color: #3E57D4;
+        text-align: center;
+        font-family: LucidaGrande;
+      }
+    }
+  }
+}
+
+// =======================
+//   CONTACT US MOBILE
+// =======================
+#contact-us {
+  overflow: hidden;
+  height: 100vh;
+  .contact-us-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .contact-us-item {
+    margin: 1rem auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid rgba($primary-color, 0.5);
+    width: 70vw;
+    .inner-container {
+      margin: 2rem auto;
+      text-align: center;
+      border: 1px solid rgba($primary-color, 0.5);
+    }
+    h1 {
+      text-transform: uppercase;
+      font-family: LucidaGrande;
+      font-size: 2rem;
+      color: #3E57D4;
+      padding: 1rem;
+      text-align: center;
+    }
+    p {
+      padding: 1rem;
+      font-family: LucidaGrande;
+      font-size: 1.3rem;
+      color: #3E57D4;
+      text-align: center;
+    }
+    #map{
+     width: 60vw;
+     margin: 1rem;
+     border: 1px solid rgba($primary-color, 0.5);
+      h6 {
+        font-family: LucidaGrande;
+        font-size: 1rem;
+        text-transform: uppercase;
+        color: #3E57D4;
+        text-align: center;
+        text-shadow: 0 2px 4px rgba(0,0,0,0.009);
+    }
+  }
+}
+  .contact-info{
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid ($primary-color, 0.5);
+    font-family: AlTarikh;
+    font-size: 30px;
+    color: $primary-color;
+    // text-align: center;
+    // text-shadow: 0 1px 1px rgba(0,0,0,0.50);
+    a  {
+      text-decoration: none;
+      font-size: 1.2rem;
+      color: $primary-color;
+    }
+    i {
+      padding: auto 1rem;
+      font-size: 1.5rem;
+      color: $primary-color;
+    }
+  }
+  .social-icons {
+    margin: 1rem;
+    a {
+      text-decoration: none;
+      color: $primary-color;
+      margin: 1rem;
+    }
+  }
+  .contact-us-item{
+    form {
+    text-align: center;
+    }
+    fieldset {
+      border: medium none !important;
+      margin: 0 0 10px;
+      min-width: 100%;
+      padding: 0;
+      width:100%;
+    }
+    #contact-form input[type="text"], 
+    #contact-form input[type="email"],
+    #contact-form input[type="tel"] {
+      width: 80%;
+      border: 1px solid #ccc;
+      background: #fff;
+      margin: 0 auto;
+      padding: 10px;
+      color: $primary-color;
+    }
+    #contact-form button[type="submit"] {
+      cursor: pointer;
+      width: 70%;
+      border: none;
+      background: $primary-color;
+      color: #fff;
+      margin: 0 0 5px;
+      padding: 1rem;
+      font-size: 1.5rem;
+    }
+    #contact-form button[type="submit"]:hover{
+      background: #09c;
+    }
+  }
 }
