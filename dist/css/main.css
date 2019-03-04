@@ -401,3 +401,81 @@ body {
     font-size: 1.5rem; }
   #contact-us .contact-us-item #contact-form button[type="submit"]:hover {
     background: #09c; }
+
+@media screen and (min-width: 581px) {
+  #contact-us .contact-us-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+  #contact-us .contact-us-item {
+    margin: 10rem 2rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100vw; }
+    #contact-us .contact-us-item .inner-container {
+      margin: 1rem auto;
+      width: 95%; }
+    #contact-us .contact-us-item h1 {
+      font-size: 2rem;
+      padding: 1rem; }
+    #contact-us .contact-us-item #map {
+      width: 95%;
+      margin: 1rem;
+      border: 1px solid rgba(22, 87, 206, 0.5); }
+      #contact-us .contact-us-item #map h6 {
+        font-family: LucidaGrande;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        color: #3E57D4;
+        text-align: center;
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.009); }
+  #contact-us .contact-info {
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid #1657CE, 0.5;
+    font-family: AlTarikh;
+    font-size: 30px;
+    color: #1657CE; }
+    #contact-us .contact-info a {
+      text-decoration: none;
+      font-size: 1.3rem;
+      color: #1657CE; }
+    #contact-us .contact-info i {
+      padding: auto 1rem;
+      font-size: 1.5rem;
+      color: #1657CE; }
+  #contact-us .social-icons {
+    margin: 1rem; }
+    #contact-us .social-icons a {
+      text-decoration: none;
+      color: #1657CE;
+      margin: 1rem; }
+  #contact-us .contact-us-item form {
+    text-align: center; }
+  #contact-us .contact-us-item fieldset {
+    border: medium none !important;
+    margin: 0 0 10px;
+    min-width: 100%;
+    padding: 0;
+    width: 100%; }
+  #contact-us .contact-us-item #contact-form input[type="text"],
+  #contact-us .contact-us-item #contact-form input[type="email"],
+  #contact-us .contact-us-item #contact-form input[type="tel"] {
+    width: 80%;
+    border: 1px solid #ccc;
+    background: #fff;
+    margin: 0 auto;
+    padding: 10px;
+    color: #1657CE; }
+  #contact-us .contact-us-item #contact-form button[type="submit"] {
+    cursor: pointer;
+    width: 70%;
+    border: none;
+    background: #1657CE;
+    color: #fff;
+    margin: 0 0 5px;
+    padding: 1rem;
+    font-size: 1.5rem; }
+  #contact-us .contact-us-item #contact-form button[type="submit"]:hover {
+    background: #09c; } }
