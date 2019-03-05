@@ -12,6 +12,7 @@ $black-color:  #000;
   font-size: 10px;
 }
 body {
+  position: relative;
   margin: 0;
   color: $black-color;
   font-family: Arial, Helvetica, sans-serif;
@@ -70,14 +71,13 @@ body {
   }
 }
 #nav-container {
-  // position: fixed;
-  height: 4rem;
-  width: 100%;
-  .taggeable_bar {
+  .navbar-toggler{
     display: none;
   }
-  #logo {
-    display: none;
+  height: 4rem;
+  width: 100%;
+  .navbar-brand{
+    display:none
   }
   ul {
     display: flex;
@@ -95,7 +95,7 @@ body {
     background-color: red;
     content: "";
     width: 0;
-    height: 3px;
+    height: 1px;
     left: 0;
     // bottom: 0;
     transition: width 0.35s ease 0s;
@@ -112,6 +112,9 @@ body {
     font-size: 1.5rem;
     text-shadow: 0 2px 4px rgba(0,0,0,0.70);
   }
+}
+#mobile-navbar{
+  display: none;
 }
 
 // =======================
@@ -171,40 +174,48 @@ body {
 // =======================
 //         MOBILE
 // =======================
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 910px) {
   header #menu-top{
     display: none;
   }
-  #nav-container {
-    ul {
-      background-color: rgba($primary-color, 0.7);
-      display: flex;
-      flex-direction: column;
-      margin-bottom: 10px;
+  #nav-container{
+    display: none;
+  }
+  #mobile-navbar{
+    display: block;
+   #navbar-nav{
+     background-color: rgba($primary-color, 0.4) !important;
+   }
+   .navbar-brand {
+     text-align: center;
+    img {
+      height: 4rem !important;
+      width: 4rem !important;
     }
-    ul li {
-      text-align: center;
-      margin: 0.4rem;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.222);
+    h4{
+      font-size: 1rem;
+      text-shadow: 0 2px 4px rgba(0,0,0,0.50);
     }
-    ul li:last-child {
-      border: 0;
-    }
-    li:hover {
-      background-color: rgba(204, 204, 204, 0.201);
-    }
-    li + li {
-      border-left: none;
-    }
-    .taggeable_bar i {
-      display: block !important;
-      z-index: 1;
-      position: absolute;
-      top: 10px;
-      right: 20px;
-      color: $white-color;
-    }
-    
+   }
+   .arab a{
+     color: rgba($white-color, 0.7);
+     font-size: 10px;
+    //  border: 1px solid rgba($white-color, 0.7);
+     padding: 0.5rem;
+   }
+   button {
+    text-shadow: 0 2px 4px rgba(0,0,0,0.50);
+     span {
+       color: $white-color;
+       font-size: 2rem;
+     }
+   }
+   .navbar{
+     text-align: center !important; 
+   }
+   .nav-item a {
+     font-size: 15px !important;
+   }
   }
   #bg-img {
     background-image: $hero-img;
@@ -213,7 +224,7 @@ body {
     background-position: center;
     
     #showcase {
-      height:100vh !important;
+      height:80vh !important;
       h1 {
         font-size: 2.5rem !important;
       }
@@ -227,6 +238,8 @@ body {
   }
   
 }
+  
+  
 
 
 // =======================
@@ -236,11 +249,12 @@ body {
   text-transform: uppercase;
   text-align: center;
   margin: 10px !important;
+  padding: 6px 1px 1px 1px;
   width: 8rem;
-  margin-top: 10px;
+  // margin-top: 10px;
   border: 1px solid #3E57D4;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.075);
-  border: 1px solid $primary-color;
+  // border: 1px solid $primary-color;
   font-family: AlTarikh;
   font-size: 1rem;
   color: #3E57D4;
@@ -605,7 +619,7 @@ body {
       // text-shadow: 0 1px 1px rgba(0,0,0,0.50);
       a  {
         text-decoration: none;
-        font-size: 1.3rem;
+        font-size: 1.5rem;
         color: $primary-color;
       }
      

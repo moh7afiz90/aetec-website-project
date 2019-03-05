@@ -4,6 +4,7 @@
   font-size: 10px; }
 
 body {
+  position: relative;
   margin: 0;
   color: #000;
   font-family: Arial, Helvetica, sans-serif; }
@@ -48,9 +49,9 @@ body {
 #nav-container {
   height: 4rem;
   width: 100%; }
-  #nav-container .taggeable_bar {
+  #nav-container .navbar-toggler {
     display: none; }
-  #nav-container #logo {
+  #nav-container .navbar-brand {
     display: none; }
   #nav-container ul {
     display: flex;
@@ -64,7 +65,7 @@ body {
     background-color: red;
     content: "";
     width: 0;
-    height: 3px;
+    height: 1px;
     left: 0;
     transition: width 0.35s ease 0s;
     position: absolute; }
@@ -76,6 +77,9 @@ body {
     text-decoration: none;
     font-size: 1.5rem;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7); }
+
+#mobile-navbar {
+  display: none; }
 
 #bg-img {
   background-image: url(../assets/images/hero-bg.jpeg);
@@ -121,38 +125,43 @@ body {
       border-radius: 40.5px;
       cursor: pointer; }
 
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 910px) {
   header #menu-top {
     display: none; }
-  #nav-container ul {
-    background-color: rgba(22, 87, 206, 0.7);
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 10px; }
-  #nav-container ul li {
-    text-align: center;
-    margin: 0.4rem;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.222); }
-  #nav-container ul li:last-child {
-    border: 0; }
-  #nav-container li:hover {
-    background-color: rgba(204, 204, 204, 0.201); }
-  #nav-container li + li {
-    border-left: none; }
-  #nav-container .taggeable_bar i {
-    display: block !important;
-    z-index: 1;
-    position: absolute;
-    top: 10px;
-    right: 20px;
-    color: #ffffff; }
+  #nav-container {
+    display: none; }
+  #mobile-navbar {
+    display: block; }
+    #mobile-navbar #navbar-nav {
+      background-color: rgba(22, 87, 206, 0.4) !important; }
+    #mobile-navbar .navbar-brand {
+      text-align: center; }
+      #mobile-navbar .navbar-brand img {
+        height: 4rem !important;
+        width: 4rem !important; }
+      #mobile-navbar .navbar-brand h4 {
+        font-size: 1rem;
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); }
+    #mobile-navbar .arab a {
+      color: rgba(255, 255, 255, 0.7);
+      font-size: 10px;
+      padding: 0.5rem; }
+    #mobile-navbar button {
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); }
+      #mobile-navbar button span {
+        color: #ffffff;
+        font-size: 2rem; }
+    #mobile-navbar .navbar {
+      text-align: center !important; }
+    #mobile-navbar .nav-item a {
+      font-size: 15px !important; }
   #bg-img {
     background-image: url(../assets/images/hero-bg.jpeg);
     height: 100vh;
     background-size: cover;
     background-position: center; }
     #bg-img #showcase {
-      height: 100vh !important; }
+      height: 80vh !important; }
       #bg-img #showcase h1 {
         font-size: 2.5rem !important; }
       #bg-img #showcase h4 {
@@ -164,11 +173,10 @@ body {
   text-transform: uppercase;
   text-align: center;
   margin: 10px !important;
+  padding: 6px 1px 1px 1px;
   width: 8rem;
-  margin-top: 10px;
   border: 1px solid #3E57D4;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.075);
-  border: 1px solid #1657CE;
   font-family: AlTarikh;
   font-size: 1rem;
   color: #3E57D4;
@@ -439,7 +447,7 @@ body {
     color: #1657CE; }
     #contact-us .contact-info a {
       text-decoration: none;
-      font-size: 1.3rem;
+      font-size: 1.5rem;
       color: #1657CE; }
     #contact-us .contact-info i {
       padding: auto 1rem;
