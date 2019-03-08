@@ -282,10 +282,9 @@ body {
       color: #3E57D4;
       text-align: center;
       text-shadow: 0 2px 4px #BBBCD6;
-      margin: 5rem;
+      margin: 1rem;
     } 
-  }
-  // Stepper
+    // Stepper
   #slider {
     display: flex;
     justify-content: center;
@@ -376,61 +375,45 @@ body {
       box-shadow: 0 1px 2px 0 rgba(0,0,0,0.50);
     }
   }
+  }
+  
   #container-about-us {
     .flex { 
-      margin: 7rem auto;
-      display: flex; 
+      margin: 5rem;
+      // display: flex; 
       flex-direction: column; 
-      justify-content: space-around;
-      width: 80vw; 
-      height: 40vh;
+      // justify-content: space-around;
+      // width: 80vw; 
+      // height: 40vh;
       // border: 1px solid gray; 
-      padding: 4px;
+      // padding: 4px;
     }
-    .flex div {
-      margin: 10px;
-      flex: 25%; 
-      border: 1px solid gray; 
-      padding: 4px; 
-      border: 1px solid rgba(62,87,212,0.3);
-      box-shadow: 0 0 1px 0 #3E57D4;
-      font-family: verdana; 
-      font-size: 19px; 
-      text-align: center; 
-      color: black;
-      
+    .flex {
+      display: flex;
+      flex-direction: column;
+      // justify-content: center;
+      align-items: center;
+    
       p {
         font-family: $font-family;
         font-size: 1.5rem;
         color: #8A8C8F;
       }
+      .container{
+        padding: 4px; 
+        border: 1px solid rgba(62,87,212,0.3);
+        box-shadow: 0 0 1px 0 #3E57D4;
+        font-family: verdana; 
+        font-size: 19px; 
+        color: black;
+      }
     }
   }
-  img {
-    // margin: 0;
-    // padding: 0;
-    // object-fit: contain;
-    height: 25%;
-    width: 25%;
-    // border: 1px solid #979797;
+  img{
+    height: 200px;
+    width: 200px;
+    justify-content: center;
     box-shadow: 4px 3px 4px 0 rgba(180, 172, 241, 0.116);
-    .img{
-      position: absolute;
-    }
-    #img1{
-      position: absolute;
-      z-index:5;
-    }
-    #img2{
-      position: absolute;
-      margin: 30px -10px 0 30px;
-      z-index: 2;
-    }
-    #img3{
-      position: absolute;
-      margin: -60px 0 -20px -60px;
-      z-index: 3;
-    }
   }
 }
 
@@ -553,90 +536,119 @@ body {
   }
 }
 // =======================
-//        ADMISSION
+//     ADMISSION Mobile
 // =======================
-#admission{
+#admission { 
   height: 100vh;
   overflow: hidden;
   .header {
-    font-family: LucidaGrande;
+    font-family: $primary-color;
     font-size: 45px;
     color: #3E57D4;
     text-align: center;
     text-shadow: 0 2px 4px #BBBCD6;
   }
   .container {
-    width: 90vw;
-    margin: auto;
+    width: 95vw;
     display: flex;
     flex-direction: column;
     flex: 1;
     .application-container-1 {
-      border: 1px solid $primary-color;
-    }
-    .application-container-1 h1 {
-      padding: 10px;
-      font-family: LucidaGrande;
-      font-size: 3rem;
-      color: #3E57D4;
-      text-shadow: 0 2px 4px rgba(0,0,0,0.50);
-      text-align: center;
-    }
-    .application-container-2 {
-      text-align: center;
-      margin-top: 10px;
+      margin-top: 2rem;
       border: 1px solid rgba($primary-color, 0.1);
+      box-shadow: 0 0.1px 0.1px 0 $primary-color;
+      border-radius: 31.5px;
+      h1 {
+        padding: 10px;
+        font-family: LucidaGrande;
+        font-size: 3rem;
+        color: #3E57D4;
+        text-shadow: 0 2px 4px rgba(0,0,0,0.50);
+        text-align: center;
+      }
+      p {
+        font-family: LucidaGrande;
+        padding: 10px;
+        font-size: 1rem;
+        color: #3E57D4;
+        text-align: center;
+        text-shadow: 0 2px 4px rgba(0,0,0,0.050);
+      }
     }
-    .application-container-1 p {
-      font-family: LucidaGrande;
-      padding: 10px;
-      font-size: 1rem;
-      color: #3E57D4;
-      text-align: center;
-      text-shadow: 0 2px 4px rgba(0,0,0,0.050);
+  }
+  .application-container-2 {
+    border: 1px solid rgba($primary-color, 0.1);
+    border-radius: 31.5px;
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0.1px 0.1px 0 $primary-color;
+    align-items: center;
+    img {
+      width: 70%;
+      height: 50%;
     }
-    
-    .application-container-2 a {
-      text-align: center;
-      background: #3E57D4;
-      border: 1px solid #979797;
-      box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
-      border-radius: 3rem;
-      font-family: LucidaGrande;
-      font-size: 1.5rem;
-      padding: 0.5rem;
-      color: #FFFFFF;
-      text-shadow: 0 2px 4px rgba(0,0,0,0.50);
+    .button{
       text-decoration: none;
+      margin: 10px;
+      font-size: 1.5rem;
+      padding: 5px 25px;
       text-transform: uppercase;
-      
+      font-family: $font-family;
+      color: #ffffff;
+      text-align: center;
+      text-shadow: 0 2px 4px rgba(148,143,196,0.50);
+      background:$primary-color;
+      border: 1px solid $primary-color;
+      box-shadow: 2px 2px 10px 2px rgba(0,0,0,0.50);
+      border-radius: 40.5px;
+      cursor: pointer;
     }
-  }
-  .box {
-    float: right;
-    width: 90px;
-    height: 20px;
-    // padding: 80px 0 0px 10px;
-    // background-image: url('./assets/images/admission-img/1.jpeg');
-    border: 1px solid #444;
-  }
-  .box img {
-    width: 10rem;
-    height: 10rem;
-  }
-  .box.a {
-    position: relative;
-  }
-  .box.b{
-    margin-top: -7.5rem;
-    margin-left: 4rem;
-  }
-  .box.c{
-    margin-top: 7.5rem;
-    margin-left: 8rem;
   }
 }
-
+// =======================
+//        ADMISSION Desktop
+// =======================
+@media screen and (min-width: 800px){
+  #admission .container{
+    margin-top: 4rem;
+    display: flex;
+    padding: 10px;
+    flex-direction: row;
+    justify-content: stretch;
+    align-items: space-evenly;
+    height: 75vh;
+    // flex: 2;
+    
+    .application-container-1{
+      // margin: 10px;
+      margin: 10px;
+      // margin: auto;
+      flex-shrink: 2;
+      h1 {
+        font-size: 4rem;
+      }
+      p{
+        padding-top: 5rem;
+        font-size: 1.5rem;
+        text-align: justify;
+      }
+    }
+    .application-container-2{
+      margin: 10px;
+      flex-shrink: 1;
+      img{
+        margin: 2rem;
+        width: 300px;
+      }
+      .button{
+      margin: 5rem;
+      font-size: 2rem;
+      padding: 7px 30px;
+      }
+    }
+  }
+}
 // =======================
 //        MEDIA MOBILE
 // =======================
@@ -837,6 +849,7 @@ body {
 // =======================
 @media screen and (min-width: 581px) {
   #contact-us {
+    height: 90vh;
     .contact-us-container{
       display: flex;
       flex-direction: row;
@@ -938,57 +951,58 @@ body {
       }
     }
   }
+  .signature {
+    background: #222222;
+    // margin: 10px auto;
+    padding: 10px 0;
+    width: 100%;
+  }
+  
+  .signature p{
+    text-align: center;
+    font-family: Helvetica, Arial, Sans-Serif;
+    font-size: 1rem;
+    color: #AAAAAA;
+  }
+  
+  .signature .much-heart{
+    display: inline-block;
+    position: relative;
+    margin: 0 2px;
+    height: 10px;
+    width: 10px;
+    background: #AC1D3F;
+    border-radius: 4px;
+    -ms-transform: rotate(45deg);
+      -webkit-transform: rotate(45deg);
+      transform: rotate(45deg);
+  }
+  
+  .signature .much-heart::before, 
+  .signature .much-heart::after {
+    display: block;
+    content: '';
+    position: absolute;
+    margin: auto;
+    height: 10px;
+    width: 10px;
+    border-radius: 5px;
+    background: #AC1D3F;
+    top: -4px;
+  }
+  
+  .signature .much-heart::after {
+    bottom: 0;
+    top: auto;
+    left: -4px;
+  }
+  
+  .signature a {
+    color: #AAAAAA;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bold;
+  }
 }
 
-.signature {
-  background: #222222;
-	margin: 10px auto;
-	padding: 10px 0;
-	width: 100%;
-}
 
-.signature p{
-	text-align: center;
-	font-family: Helvetica, Arial, Sans-Serif;
-	font-size: 1rem;
-	color: #AAAAAA;
-}
-
-.signature .much-heart{
-	display: inline-block;
-	position: relative;
-	margin: 0 2px;
-	height: 10px;
-	width: 10px;
-	background: #AC1D3F;
-	border-radius: 4px;
-	-ms-transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-    transform: rotate(45deg);
-}
-
-.signature .much-heart::before, 
-.signature .much-heart::after {
-	display: block;
-  content: '';
-  position: absolute;
-  margin: auto;
-  height: 10px;
-  width: 10px;
-  border-radius: 5px;
-  background: #AC1D3F;
-  top: -4px;
-}
-
-.signature .much-heart::after {
-	bottom: 0;
-	top: auto;
-	left: -4px;
-}
-
-.signature a {
-	color: #AAAAAA;
-  text-decoration: none;
-  font-size: 2rem;
-	font-weight: bold;
-}
