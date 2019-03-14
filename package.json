@@ -3,13 +3,16 @@
   "version": "1.0.0",
   "description": "AETECT Project",
   "main": "index.js",
+  "homepage": "https://moh7afiz90.github.io/aetec-website-project",
   "scripts": {
-    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive",
+    "deploy": "gh-pages -d dist"
   },
   "author": "Mohanad Elhag",
   "license": "ISC",
   "dependencies": {
     "flag-icon-css": "^3.3.0",
+    "gh-pages": "^2.0.1",
     "node-sass": "^4.11.0"
   },
   "devDependencies": {
