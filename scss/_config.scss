@@ -1,0 +1,14 @@
+$primary-color: #1657CE;
+$show-home-img: true;
+$font-family: LucidaGrande;
+$hero-img: url(../assets/images/hero-bg.jpeg);
+$background-opacity: 0.03;
+$overlay-color: rgba(22, 87, 206, 0.5);
+$white-color: #ffffff;
+$black-color:  #000;
+
+@mixin mediaMobile {
+  @media screen and (min-width: 500px){
+    @content;
+  }
+}

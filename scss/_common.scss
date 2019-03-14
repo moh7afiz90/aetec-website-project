@@ -1,0 +1,78 @@
+// =======================
+//    SECTION BOX STYLE
+// =======================
+.title {
+  text-transform: uppercase;
+  text-align: center;
+  margin: 10px !important;
+  padding: 6px 1px 1px 1px;
+  width: 8rem;
+  // margin-top: 10px;
+  border: 1px solid #3E57D4;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.075);
+  // border: 1px solid $primary-color;
+  font-family: AlTarikh;
+  font-size: 1rem;
+  color: #3E57D4;
+  text-shadow: 0 1px 1px rgba(62, 87, 212, 0.037);
+}
+// =======================
+//    SIDE NAV STYLE
+// =======================
+#side-nav{
+  .nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    li a {
+      padding: 0.5rem;
+      color: rgb(223, 140, 16);
+      text-decoration: none;
+      text-transform: uppercase;
+      text-shadow: 0 1px 1px rgba(0, 0, 0, 0.26);
+    }
+    li a:hover {
+      color:rgba($primary-color, 0.9);
+      transition: ease-in-out 0.3s;
+    }
+  }
+}
+
+#ar {
+  .title {
+    
+    text-align: center;
+    margin: 10px !important;
+    // top: 10;
+    padding: 6px 1px 1px 1px;
+    border: 1px solid #3E57D4;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.075);
+    font-family: AlTarikh;
+    // float: right;
+    font-size: 1.5rem;
+    color: #3E57D4;
+    text-shadow: 0 1px 1px rgba(62, 87, 212, 0.037);
+  }
+  // =======================
+  //    SIDE NAV STYLE
+  // =======================
+  #side-nav{
+    .nav{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      li a {
+        font-size: 1.5rem;
+        padding: 0.7rem;
+        color: rgb(223, 140, 16);
+        text-decoration: none;
+        text-transform: uppercase;
+        text-shadow: 0 1px 1px rgba(0, 0, 0, 0.26);
+      }
+      li a:hover {
+        color:rgba($primary-color, 0.9);
+        transition: ease-in-out 0.3s;
+      }
+    }
+  }
+}
